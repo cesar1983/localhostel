@@ -1,0 +1,38 @@
+.banner {
+	margin: 0px;
+	position: relative;
+	min-height: 84vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	.display-datapickers {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		flex-direction: column;	
+		min-height: 84vh;
+
+		.hostel-name {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+
+			img.img-title {
+				width: 60%;
+				min-width: 300px;
+				padding: 10px;
+				max-width: 500px;
+				margin: 70px auto 30px;
+			}
+		}
+
+		fixed-date-picker-bar {
+			width: 100%;
+		}
+		
+	}
+	
+}

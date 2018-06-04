@@ -1,0 +1,84 @@
+$mat-green: #347924;
+#bolshoiImage {
+  width: 4.5rem;
+  background-color: $mat-green;
+}
+
+.feature-items-section {
+  background-color: white;
+  padding: 40px 10px;
+
+  .hostel-icons {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.25rem;
+    justify-content: flex-start;
+    background-color: $mat-green;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    height: 65px;
+    margin: 5px auto;
+
+    &:hover {
+      background-color: white;
+      border: 2px solid $mat-green;
+      transition: .3s;
+
+      h6 {
+        color: $mat-green;
+      }
+      i.tiny {
+        color: $mat-green;
+      }
+      .material-icons {
+        color: $mat-green;        
+      }
+    }
+
+    h6 {
+      color: white;
+      font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    i.tiny {
+      font-size: 2.5rem;
+      margin: auto 10px;
+      color: white;
+    }
+    .material-icons {
+      font-size: 2.5rem;
+      margin: auto 10px;
+      color: white;
+    }
+  }
+  .hostel-icons-no-hover {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.25rem;
+    justify-content: flex-start;
+    background-color: $mat-green;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    height: 65px;
+    margin: 5px auto;
+
+    h6 {
+      color: white;
+      font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    i.tiny {
+      font-size: 2.5rem;
+      margin: auto 10px;
+      color: white;
+    }
+    .material-icons {
+      font-size: 2.5rem;
+      margin: auto 10px;
+      color: white;
+    }
+  }
+  
+}

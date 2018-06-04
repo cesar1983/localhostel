@@ -1,0 +1,48 @@
+$mat-green: #347924;
+
+.no-padding {
+    padding: 0;
+    margin: 0 auto;
+
+    h2 {
+        color: black;
+    }
+
+    form#name-step {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        mat-form-field.name-form {
+            margin: 20px auto 30px;
+            min-width: 300px;
+        }
+    }
+
+    form#email-step {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        mat-form-field.email-form {
+            margin-bottom: 20px;
+            min-width: 300px;
+        }
+    }
+
+    form#message-step {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        mat-form-field.message-form {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+
+}

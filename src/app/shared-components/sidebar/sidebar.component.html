@@ -1,0 +1,28 @@
+<mat-sidenav-container>
+
+  <mat-sidenav #sidebar class="sidebar">
+    <app-sidebar-list
+      (toogledSidebar)="onToogleSidebar($event)">
+    </app-sidebar-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+    <app-toolbar 
+      (toogledSidebar)="onToogleSidebar($event)"
+      (requestPTText)="onRequestPTLanguage($event)"
+      (requestENText)="onRequestENLanguage($event)"
+      (requestDEText)="onRequestDELanguage($event)">
+    </app-toolbar>
+
+    <flash-messages></flash-messages>
+
+    <router-outlet></router-outlet>
+
+    <app-whatsapp-contact></app-whatsapp-contact>
+
+    <app-footer></app-footer>
+    
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

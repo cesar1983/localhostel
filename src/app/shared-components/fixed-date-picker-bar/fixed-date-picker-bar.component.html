@@ -1,0 +1,43 @@
+<div class="data-picker-section" #datePickerSection [class.fixed-booking-bar]="bookingBarFixed">
+  <div class="container-fluid data-picker-container">
+
+    <div class="row data-picker-row">
+      <div class="col-sm-4 col-xs-12 text-center" *ngIf="!hideDataPicker">
+        <app-datepicker [label]="arriveLabel" [dateType]="arriveDate" (selectedDate)="onSelectDate($event)"></app-datepicker>
+      </div>
+
+      <div class="col-sm-4 col-xs-12 text-center" *ngIf="!hideDataPicker">
+        <app-datepicker [label]="departureLabel" [dateType]="departureDate" (selectedDate)="onSelectDate($event)"></app-datepicker>
+      </div>
+
+      <div class="col-sm-3 col-xs-12 text-center">
+        <a target="_blank" mat-raised-button color="accent" class="button-style rent-button" (click)="redirectToHQSales()">{{ bookingText }}</a>
+      </div>
+
+      <div class="col-sm-12 text-center" id="whatsapp-section">
+        <a [href]="whatsappApiLink" target="_blank" class="whatsapp-banner-link">
+          <span>
+            <img [src]="whatsappImgSource" alt="defaultAltImage" class="whatsapp-banner-img">
+            <strong class="whatsapp-banner-text">
+              +55 (92) 98412-5252
+            </strong>
+          </span>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 text-center error-message-section">
+        <p class="error-message" *ngIf="arriveError">
+          <strong>{{ arrivalErrorMessage }}</strong>
+          <mat-icon (click)="hideArriveError()">close</mat-icon>
+        </p>
+        <p class="error-message" *ngIf="departureError">
+          <strong>{{ departureErrorMessage }}</strong>
+          <mat-icon (click)="hideDepartureError()">close</mat-icon>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<mat-form-field (click)="picker.open()">
+
+  <input matInput readonly [min]="startDate" [matDatepicker]="picker" [placeholder]="label" (dateChange)="dateChange($event)"
+    (click)="picker.open()">
+
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker startView="month" touchUi="true"></mat-datepicker>
+
+</mat-form-field>

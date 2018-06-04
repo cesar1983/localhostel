@@ -1,0 +1,65 @@
+.data-picker-section {
+    padding: 10px;
+    width: auto;
+    background-color: rgba(255,255,255,.6);
+
+    .data-picker-container {
+        max-width: 920px !important;
+
+        #whatsapp-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .whatsapp-banner-link {
+                text-decoration: none; 
+                color: white; 
+            }
+            .whatsapp-banner-img {
+                margin-right: 10px;
+                margin-left: 10px;
+                width: 32px;
+            }
+            .whatsapp-banner-text {
+                font-size: 17px;
+                color: black;
+            }
+        }        
+        .rent-button {
+            color: black !important;
+        }
+        .error-message-section {
+            margin: 10px auto 0;
+
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                strong {
+                    margin-right: 16px;
+                }
+
+                mat-icon {
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+    }
+}
+
+.fixed-booking-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+	#whatsapp-section {
+		padding-top: 20px;
+	}
+}

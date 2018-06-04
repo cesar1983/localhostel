@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 no-padding">
+
+      <h2 class="text-center">{{ sendMessageText }}</h2>
+
+      <mat-horizontal-stepper [linear]="isLinear" #stepper="matHorizontalStepper">
+
+        <mat-step [stepControl]="firstFormGroup">
+          <form [formGroup]="firstFormGroup" id="name-step">
+            <ng-template matStepLabel>{{ fullNameText }}</ng-template>
+            <mat-form-field class="name-form">
+              <input style="color: black !important;" type="text" minlength="3" [(ngModel)]="emailLead.name" matInput placeholder="{{ fullNameText }}" formControlName="firstCtrl" required >
+            </mat-form-field>
+            <div>
+              <button mat-raised-button color="primary" matStepperNext>{{ nextText }}</button>
+            </div>
+          </form>
+        </mat-step>
+
+        <mat-step [stepControl]="secondFormGroup">
+          <form [formGroup]="secondFormGroup" id="email-step">
+            <ng-template matStepLabel>Email</ng-template>
+
+            <mat-form-field class="email-form">
+              <input type="email" matInput formControlName="email" required [(ngModel)]="emailLead.email" placeholder="Enter your email">
+              <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+
+            <div>
+              <button mat-raised-button color="primary" matStepperPrevious>{{ previousText }}</button>
+              <button mat-raised-button color="primary" matStepperNext>{{ nextText }}</button>
+            </div>
+
+          </form>
+        </mat-step>
+
+        <mat-step [stepControl]="thirdFormGroup">
+          <form [formGroup]="thirdFormGroup" id="message-step" (submit)="onSubmit()">
+            <ng-template matStepLabel>{{ messageText }}</ng-template>
+
+            <mat-form-field class="message-form">
+              <textarea type="text" [(ngModel)]="emailLead.message" matInput placeholder="{{ messageText }}" formControlName="thirdCtrl" required rows="5"></textarea>
+            </mat-form-field>
+
+            <div>
+              <button matStepperNext mat-raised-button color="primary" [disabled]="alreadySentMessage">{{ submitText }}</button>
+            </div>
+          </form>
+        </mat-step>
+        
+      </mat-horizontal-stepper>
+
+    </div>
+  </div>
+</div>

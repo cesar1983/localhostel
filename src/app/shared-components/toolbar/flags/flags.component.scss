@@ -1,0 +1,23 @@
+.flags {
+    padding: 0 6px;
+    border-radius: 4px;
+
+    .selected-flag {
+
+        img.flag {
+            width: 28px;
+        }
+    }
+
+}
+.mat-button-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    img {
+        margin-left: 20px;
+        width: 28px;
+    }
+
+}

@@ -1,0 +1,27 @@
+<div class="container-fluid text-block-section">
+  <div class="row default-margin">
+    <div class="col-sm-12">
+
+      <h1 class="text-title" [ngClass]="{'text-center': centralizeTitle}" *ngIf="title">{{ title }}</h1>
+
+      <div class="text-block" *ngIf="firstText" [innerHTML]=' firstText | keepHtml'>
+      </div>
+
+      <br *ngIf="secondText">
+
+      <div class="text-block" *ngIf="secondText" [innerHTML]=' secondText | keepHtml'>
+      </div>
+
+      <br *ngIf="thirdText">
+
+      <div class="text-block" *ngIf="thirdText" [innerHTML]=' thirdText | keepHtml'>
+      </div>
+
+      <br *ngIf="fourthText">
+
+      <div class="text-block" *ngIf="fourthText" [innerHTML]=' thirdText | keepHtml'>
+      </div>
+
+    </div>
+  </div>
+</div>

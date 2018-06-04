@@ -1,0 +1,29 @@
+$mat-green: #347924;
+
+.work-with-us-container {
+  
+  .row {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 80vh;
+
+    h1 {
+      color: black;
+    }
+
+    .work-with-us-text {
+      font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+      border-left: 4px solid $mat-green;
+      padding-left: 10px;
+      text-align: justify;
+      line-height: 190%;
+      font-size: 18px;
+      margin-bottom: 0 !important;
+      color: black;
+    }
+  }
+
+}

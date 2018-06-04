@@ -1,0 +1,44 @@
+<div class="container-fluid photos-section-two">
+  <div class="row default-margin-top">
+
+    <div class="col-sm-12 no-padding">
+      <h2 class="title">{{ (bedroomsText | async)?.privateBedroomName }}</h2>
+    </div>
+
+    <div class="col-sm-6 no-padding">
+      <img class="img-responsive-full-row default-thumbnail" [src]="sharedRoomOne" [alt]="defaultAltImg">
+    </div>
+
+
+    <div class="col-sm-3 no-padding">
+      <div class="row">
+    
+        <div class="col-sm-12 no-padding">
+          <img class="img-responsive-half-row default-thumbnail" [src]="sharedRoomTwo" [alt]="defaultAltImg">
+          <img class="img-responsive-half-row default-thumbnail" [src]="sharedRoomThree" [alt]="defaultAltImg">
+        </div>
+    
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="row">
+
+        <div class="col-sm-12 no-padding">
+          <img class="img-responsive-half-row default-thumbnail" [src]="sharedRoomFour" [alt]="defaultAltImg">
+          <img class="img-responsive-half-row default-thumbnail" [src]="sharedRoomFive" [alt]="defaultAltImg">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-sm-12 no-padding">
+      <app-text-block 
+        [firstText]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'"
+      >
+      </app-text-block>
+    </div>
+    
+
+  </div>
+</div>

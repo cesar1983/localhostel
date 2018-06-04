@@ -1,0 +1,17 @@
+.footer-payment-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.footer-payment-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+
+    .footer-payment-image {
+        width: 40px;
+    }
+}

@@ -1,0 +1,24 @@
+<div class="flags">
+
+  <button class="selected-flag" mat-icon-button [matMenuTriggerFor]="menu">
+
+    <img [src]="selectedFlag" [alt]="defaultAltImage" class="flag">
+    <i class="fas fa-caret-down"></i>
+
+  </button>
+
+  <mat-menu #menu="matMenu">
+
+    <button mat-menu-item class="mat-button-menu" (click)="requestTranslate(languageOne)">
+      <span>{{ languageOne }}</span>
+      <img [src]="flagOne" [alt]="defaultAltImage" class="flag">
+    </button>
+
+    <button mat-menu-item class="mat-button-menu" (click)="requestTranslate(languageTwo)">
+      <span>{{ languageTwo }}</span>
+      <img [src]="flagTwo" [alt]="defaultAltImage" class="flag">
+    </button>
+
+  </mat-menu>
+
+</div>
