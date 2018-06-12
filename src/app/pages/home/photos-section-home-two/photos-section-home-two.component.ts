@@ -15,20 +15,28 @@ export class PhotosSectionHomeTwoComponent implements OnInit {
   sharedRoomFive  = 'assets/img/home/joinvillehostel/10.jpg';  
 
   defaultAltImg = 'Joinville Hostel';
+  text: string;
+  description;
 
-  bedroomsText: any;
 
   constructor(
     private requestTranslateService: RequestTranslateService,
   ) {
-    this.bedroomsText = this.requestTranslateService.getBedroomsTranslate('Português');
-    requestTranslateService.changeEmitted$.subscribe(language => this.translateBedroomTexts(language));
+    this.translateTitle('Português');
+    requestTranslateService.changeEmitted$.subscribe(language => this.translateTitle(language));
   }
 
   ngOnInit() { }
 
-  translateBedroomTexts(language) {
-    this.bedroomsText = this.requestTranslateService.getBedroomsTranslate(language);
+  translateTitle(language) {
+    this.description = this.requestTranslateService.getHostelDescriptionTranslate(language);
+
+    if (language == 'Português') return this.text = 'Nossos Quartos';
+
+    if (language == 'English') return this.text = 'Our Bedrooms';
+
+    if (language == 'German') return this.text = 'Our Bedrooms';
+
   }
 
 

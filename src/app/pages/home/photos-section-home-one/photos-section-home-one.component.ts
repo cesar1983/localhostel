@@ -16,23 +16,26 @@ export class PhotosSectionHomeOneComponent implements OnInit {
 
   defaultAltImg = 'Joinville Hostel';
   text: string;
+  description;
 
   constructor(
     private requestTranslateService: RequestTranslateService,
   ) {
-    this.text = this.translateTitle('Português');
+    this.translateTitle('Português');
     requestTranslateService.changeEmitted$.subscribe(language => this.translateTitle(language));
   }
 
   ngOnInit() { }
 
   translateTitle(language) {
+    this.description = this.requestTranslateService.getHostelDescriptionTranslate(language);
+    
     if (language == 'Português') return this.text = 'Áreas em comum';
 
     if (language == 'English') return this.text = 'Common areas';
 
     if (language == 'German') return this.text = 'Gemeinschaftsräume';
-  }
 
+  }
 
 }

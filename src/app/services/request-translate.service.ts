@@ -30,7 +30,7 @@ export class RequestTranslateService {
   }
 
   getHostelDescriptionTranslate(language) {
-    return this.afs.doc<Description>(`descriptionTexts/${language}`).valueChanges();
+    return this.afs.doc<Description>(`descriptions/${language}`).valueChanges();
   }
 
   getBedroomsTranslate(language) {
