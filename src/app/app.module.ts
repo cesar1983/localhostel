@@ -45,6 +45,7 @@ import { SocialMediaLinksComponent } from './shared-components/toolbar/social-me
 import { FixedDatePickerBarComponent } from './shared-components/fixed-date-picker-bar/fixed-date-picker-bar.component';
 import { SunglassesComponent } from './shared-components/icons/sunglasses/sunglasses.component';
 import { MapComponent } from './shared-components/icons/map/map.component';
+import { BagComponent } from './shared-components/icons/bag/bag.component';
 import { GuitarComponent } from './shared-components/icons/guitar/guitar.component';
 import { GoogleMapComponent } from './pages/contact/google-map/google-map.component';
 import { HowToArriveComponent } from './pages/contact/how-to-arrive/how-to-arrive.component';
@@ -70,6 +71,7 @@ import { FlashMessagesModule } from 'angular2-flash-messages';
 import { WorkWithUsComponent } from './pages/work-with-us/work-with-us.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
+
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
@@ -113,6 +115,7 @@ const appRoutes: Routes = [
     WorkWithUsComponent,
     PhotosSectionHomeThreeComponent,
     FeatureItemsTwoComponent,
+    BagComponent
   ],
   imports: [
     BrowserModule,

@@ -8,38 +8,43 @@ import { RequestTranslateService } from '../../../services/request-translate.ser
 })
 export class FeaturesHostelComponent implements OnInit {
 
-  title;
-  travelText;
-  mapText;
-  happyText;
+  title = 'Tenha o melhor de Manaus';
+  travelText = 'Passeios únicos';
+  mapText = 'Localização privilegiada';
+  happyText = 'Happy Hour todo dia';
 
   constructor(
     private requestTranslateService: RequestTranslateService,
   ) {
-    requestTranslateService.changeEmitted$.subscribe(language => { this.translateLabels(language) });
+    requestTranslateService.changeEmitted$.subscribe(language => {
+      console.log(language);
+      // this.translateLabels(language)
+    });
   }
 
-  ngOnInit() { this.translateLabels('Português') }
-
-  translateLabels(language) {
-    if (language == 'Português') {
-      this.title = 'Tenha o melhor de Manaus';
-      this.travelText = 'Lorem ipsus';
-      this.mapText = 'Lorem ipsus';
-      return this.happyText = 'Lorem ipsus';
-    }
-    if (language == 'English') {
-      this.title = 'Tenha o melhor de Manaus';
-      this.travelText = 'Lorem ipsus';
-      this.mapText = 'Lorem ipsus';
-      return this.happyText = 'Lorem ipsus';
-    }
-    if (language == 'German') {
-      this.title = 'Tenha o melhor de Manaus';
-      this.travelText = 'Lorem ipsus';
-      this.mapText = 'Lorem ipsus';
-      return this.happyText = 'Lorem ipsus';
-    }
+  ngOnInit() { 
+    // this.translateLabels('Português') 
   }
+
+  // translateLabels(language) {
+  //   if (language == 'Português') {
+  //     this.title = 'Tenha o melhor de Manaus';
+  //     this.travelText = 'Lorem ipsus';
+  //     this.mapText = 'Lorem ipsus';
+  //     return this.happyText = 'Lorem ipsus';
+  //   }
+  //   if (language == 'English') {
+  //     this.title = 'Tenha o melhor de Manaus';
+  //     this.travelText = 'Lorem ipsus';
+  //     this.mapText = 'Lorem ipsus';
+  //     return this.happyText = 'Lorem ipsus';
+  //   }
+  //   if (language == 'German') {
+  //     this.title = 'Tenha o melhor de Manaus';
+  //     this.travelText = 'Lorem ipsus';
+  //     this.mapText = 'Lorem ipsus';
+  //     return this.happyText = 'Lorem ipsus';
+  //   }
+  // }
 
 }
