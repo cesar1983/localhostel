@@ -2,7 +2,7 @@
 
 <ul class="footer-links">
   <li>
-    <a routerLink="/">
+    <a routerLink="/" (click)="backToTop()">
       <span>
         <mat-icon>home</mat-icon>
       </span>
@@ -11,21 +11,20 @@
   </li>
 
   <li>
-    <a routerLink="/contato">
+    <a routerLink="/como-chegar" (click)="backToTop()">
       <span>
         <mat-icon>email</mat-icon>
       </span>
-      <span>Contato</span>
+      <span>Como chegar</span>
     </a>
   </li>
 
   <li>
-    <a routerLink="/trabalhe-conosco">
+    <a routerLink="/trabalhe-conosco" (click)="backToTop()">
       <span>
         <mat-icon>work</mat-icon>
       </span>
       <span>Trabalhe conosco</span>
     </a>
   </li>
-
 </ul>

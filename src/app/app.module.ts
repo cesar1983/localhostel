@@ -75,7 +75,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
-  { path: 'contato', component: ContactComponent },
+  { path: 'como-chegar', component: ContactComponent },
   { path: 'trabalhe-conosco', component: WorkWithUsComponent },
   { path: '**', component: HomeComponent }
 ];

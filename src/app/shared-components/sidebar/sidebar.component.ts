@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { RequestTranslateService } from '../../services/request-translate.service';
 
-
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',

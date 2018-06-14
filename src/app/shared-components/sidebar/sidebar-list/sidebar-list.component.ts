@@ -19,6 +19,7 @@ export class SidebarListComponent implements OnInit {
 
   toogleSidebar($event) {
     this.toogledSidebar.emit("toogle");
+    window.scrollTo(0, 0);
   }
 
 }
