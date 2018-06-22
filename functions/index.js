@@ -79,7 +79,7 @@ exports.firestoreEmail = functions.firestore
         };
 
         console.log(msgInfoClient);
-        // sgMail.send(msgInfoClient);
+        sgMail.send(msgInfoClient);
 
         return sgMail.send(msgLuciano);
 
