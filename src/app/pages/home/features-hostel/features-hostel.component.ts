@@ -1,29 +1,26 @@
-import { Component, OnInit } from '@angular/core';
-import { RequestTranslateService } from '../../../services/request-translate.service';
+import { Component, OnInit } from "@angular/core";
+import { RequestTranslateService } from "../../../services/request-translate.service";
 
 @Component({
-  selector: 'app-features-hostel',
-  templateUrl: './features-hostel.component.html',
-  styleUrls: ['./features-hostel.component.scss']
+  selector: "app-features-hostel",
+  templateUrl: "./features-hostel.component.html",
+  styleUrls: ["./features-hostel.component.scss"]
 })
 export class FeaturesHostelComponent implements OnInit {
+  title = "Tenha o melhor de Manaus";
+  firstText = "Compra segura";
+  secondText = "Hostel nº 1 de Manaus";
+  thirdText = "Reserve rápido e pelo menor preço";
 
-  title = 'Tenha o melhor de Manaus';
-  travelText = 'Passeios únicos';
-  mapText = 'Localização privilegiada';
-  happyText = 'Happy Hour todo dia';
-
-  constructor(
-    private requestTranslateService: RequestTranslateService,
-  ) {
+  constructor(private requestTranslateService: RequestTranslateService) {
     requestTranslateService.changeEmitted$.subscribe(language => {
       console.log(language);
       // this.translateLabels(language)
     });
   }
 
-  ngOnInit() { 
-    // this.translateLabels('Português') 
+  ngOnInit() {
+    // this.translateLabels('Português')
   }
 
   // translateLabels(language) {
@@ -46,5 +43,4 @@ export class FeaturesHostelComponent implements OnInit {
   //     return this.happyText = 'Lorem ipsus';
   //   }
   // }
-
 }

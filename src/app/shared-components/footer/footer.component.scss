@@ -1,24 +1,22 @@
 $mat-second-color: #ffee58;
 
 footer {
-    background-color: $mat-second-color;
-    min-width: 100%;
-    min-height: 300px;
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  background-color: $mat-second-color;
+  min-width: 100%;
+  min-height: 300px;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 
-    .footer-row {
-        margin-bottom: 30px;
+  .footer-row {
+    margin-bottom: 30px;
 
-        .footer-list {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        app-footer-list {
-            width: 100%;
-        }
+    .footer-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    
 
+    app-footer-list {
+      width: 100%;
+    }
+  }
 }

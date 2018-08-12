@@ -1,46 +1,51 @@
 .sidebar-list-content {
-    margin-top: 45px;
-    
-    .sidebar-links {
-        text-decoration: none; 
-        outline: white;
-        list-style: none;
-        padding-left: 0;
-    
-        li {
-            padding: 30px;
-            font-size: 18px;
-            position: relative;
-    
-            a {
-                position: absolute;
-                bottom: 0;
-                top: 0;
-                left: 0;
-                width: 100%;
-                text-decoration: none !important;
-                color: black;
-                display: flex;
-                align-items: center;
-    
-                &:hover {
-                    background-color: rgba(0,0,0,0.1);
-                }
-    
-                span {
-                    margin-left: 30px;
-                }
-            }
+  margin-top: 45px;
+
+  .sidebar-links {
+    text-decoration: none;
+    outline: white;
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      padding: 30px;
+      font-size: 18px;
+      position: relative;
+
+      a {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-decoration: none !important;
+        color: black;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.1);
         }
-    
-        .sidebar-logo {
-            width: 280px;
-            margin: 55px 10px 80px;
-            cursor: pointer;
-    
-            &:hover {
-                opacity: 0.75;
-            }
+
+        span {
+          margin-left: 30px;
+
+          .blog-icon {
+            height: 24px;
+            width: 24px;
+          }
         }
+      }
     }
+
+    .sidebar-logo {
+      width: 280px;
+      margin: 55px 10px 80px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
 }
