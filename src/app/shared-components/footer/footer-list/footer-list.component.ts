@@ -1,19 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-footer-list',
-  templateUrl: './footer-list.component.html',
-  styleUrls: ['./footer-list.component.scss']
+  selector: "app-footer-list",
+  templateUrl: "./footer-list.component.html",
+  styleUrls: ["./footer-list.component.scss"]
 })
 export class FooterListComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   backToTop() {
     window.scrollTo(0, 0);
   }
-
 }

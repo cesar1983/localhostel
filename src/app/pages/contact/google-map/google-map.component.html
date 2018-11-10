@@ -1,4 +1,21 @@
-<div class="container-fluid no-padding">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8647725364162!2d-60.02373278504455!3d-3.1304228977205466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c057cbfe46a7d%3A0xd71d0bf7f8b4fef5!2sR.+Dona+Lib%C3%A2nia%2C+215+-+Centro%2C+Manaus+-+AM%2C+69010-250!5e0!3m2!1spt-BR!2sbr!4v1528113922963"
-     width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div class="container-fluid no-padding" *ngIf="!secondProperty">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8647725364162!2d-60.02373278504455!3d-3.1304228977205466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c057cbfe46a7d%3A0xd71d0bf7f8b4fef5!2sR.+Dona+Lib%C3%A2nia%2C+215+-+Centro%2C+Manaus+-+AM%2C+69010-250!5e0!3m2!1spt-BR!2sbr!4v1528113922963"
+    width="100%"
+    height="300"
+    frameborder="0"
+    style="border:0"
+    allowfullscreen
+  ></iframe>
+</div>
+
+<div *ngIf="secondProperty">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.2705110209267!2d-60.02329088513856!3d-2.0477061985072345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9273c55555555555%3A0xb4f198d35197e9a1!2sLocal+Hostel+Figueiredo!5e0!3m2!1spt-BR!2sbr!4v1541871889104"
+    width="100%"
+    height="300"
+    frameborder="0"
+    style="border:0"
+    allowfullscreen
+  ></iframe>
 </div>

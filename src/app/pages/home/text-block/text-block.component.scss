@@ -16,10 +16,12 @@ $mat-green: #347924;
     border-left: 4px solid $mat-green;
     padding-left: 10px;
     text-align: justify;
-    line-height: 190%;
+    line-height: 150%;
     font-size: 18px;
     margin-bottom: 0 !important;
     color: black;
   }
-  
+}
+.smallTitle {
+  font-size: 22px !important;
 }

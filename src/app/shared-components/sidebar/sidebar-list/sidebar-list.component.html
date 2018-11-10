@@ -1,35 +1,59 @@
 <div class="sidebar-list-content">
   <a routerLink="/" class="sidebar-links" (click)="toogleSidebar($event)">
-    <img [src]="logoImgPath" [alt]="defaultAltImg" class="sidebar-logo">
+    <img [src]="logoImgPath" [alt]="defaultAltImg" class="sidebar-logo" />
   </a>
 
   <ul class="sidebar-links">
     <li>
-      <a routerLink="/como-chegar" routerLinkActive="active" (click)="toogleSidebar($event)">
-        <span>
-          <mat-icon>location_on</mat-icon>
-        </span>
-        <span>Como chegar</span>
+      <a
+        routerLink="/manaus"
+        routerLinkActive="active"
+        (click)="toogleSidebar($event)"
+      >
+        <span> <i class="fas fa-hotel"></i> </span> <span>Hostel Manaus</span>
       </a>
     </li>
 
     <li>
-      <a routerLink="/trabalhe-conosco" routerLinkActive="active" (click)="toogleSidebar($event)">
-        <span>
-          <mat-icon>work</mat-icon>
-        </span>
-        <span>Trabalhe conosco</span>
+      <a
+        routerLink="/figueiredo"
+        routerLinkActive="active"
+        (click)="toogleSidebar($event)"
+      >
+        <span> <i class="fas fa-hotel"></i> </span>
+        <span>Hostel Figueiredo</span>
       </a>
     </li>
 
     <li>
-      <a target="_blank" href="https://localhostel.wordpress.com/" (click)="toogleSidebar($event)">
-        <span>
-          <i class="fab fa-blogger blog-icon"></i>
-        </span>
+      <a
+        routerLink="/como-chegar"
+        routerLinkActive="active"
+        (click)="toogleSidebar($event)"
+      >
+        <span> <mat-icon>location_on</mat-icon> </span> <span>Como chegar</span>
+      </a>
+    </li>
+
+    <li>
+      <a
+        routerLink="/trabalhe-conosco"
+        routerLinkActive="active"
+        (click)="toogleSidebar($event)"
+      >
+        <span> <mat-icon>work</mat-icon> </span> <span>Trabalhe conosco</span>
+      </a>
+    </li>
+
+    <li>
+      <a
+        target="_blank"
+        href="https://localhostel.wordpress.com/"
+        (click)="toogleSidebar($event)"
+      >
+        <span> <i class="fab fa-blogger blog-icon"></i> </span>
         <span>Nosso Blog</span>
       </a>
     </li>
-
   </ul>
 </div>

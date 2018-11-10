@@ -1,71 +1,118 @@
-<div class="col-sm-6 special-display">
-  <app-text-block 
-    [center-title]="centerTitle" 
-    [title]="'A melhor localização de Manaus'"
-    [firstText]="locationText" 
-  >
-  </app-text-block>
-</div>
+<div class="container">
+  <div *ngIf="!secondProperty">
+    <div class="col-sm-12 special-display">
+      <app-text-block
+        [center-title]="centerTitle"
+        [title]="'Como chegar - Local Hostel Manaus'"
+        [firstText]="locationText"
+      >
+      </app-text-block>
+    </div>
 
-<div class="col-sm-6 no-padding">
-  <app-location-details></app-location-details>
-</div>
+    <div class="col-sm-12 no-padding">
+      <app-location-details></app-location-details>
+    </div>
 
-<div class="col-sm-12">
-  <h1 class="text-center default-margin">{{ 'Como chegar? É fácil:' }}</h1>
-</div>
+    <div class="col-sm-12"><h1>Do Aeroporto:</h1></div>
 
-<div class="col-sm-12">
-  <h1>
-    Do Aeroporto:
-  </h1>
-</div>
-
-<div class="col-sm-12">
-  <app-text-block 
-    [title]="'1ª opção: Ônibus'" 
-    [firstText]="'Pegue a linha 813. Desça na Av Getúlio Vargas, na parada próxima ao Hospital Beneficente Portuguesa. Atravesse a avenida,
+    <div class="col-sm-12">
+      <app-text-block
+        [smallTitle]="true"
+        [title]="'1ª opção: Ônibus'"
+        [firstText]="
+          'Pegue a linha 813. Desça na Av Getúlio Vargas, na parada próxima ao Hospital Beneficente Portuguesa. Atravesse a avenida,
                   e procure pela rua Marçal, ao lado do Restaurante KI-TEMPERO. Nessa rua, pegue a primeira a direita, estamos no número 215,
-                  na Rua Dona Libania.'"
-  >
-  </app-text-block>
-</div>
+                  na Rua Dona Libania.'
+        "
+      >
+      </app-text-block>
+    </div>
 
-<div class="col-sm-6">
-  <app-text-block 
-    [title]="'2ª opção: Transfer'" 
-    [firstText]="'Temos também o serviço de transfer do aeroporto até o hostel. Agende conosco antecipadamente.'"
-  >
-  </app-text-block>
-</div>
+    <div class="col-sm-12">
+      <app-text-block
+        [smallTitle]="true"
+        [title]="'2ª opção: Transfer'"
+        [firstText]="
+          'Temos também o serviço de transfer do aeroporto até o hostel. Agende conosco antecipadamente.'
+        "
+      >
+      </app-text-block>
+    </div>
 
-<div class="col-sm-6">
-  <app-text-block 
-    [title]="'3ª opção: UBER'" 
-    [firstText]="uberOption"
-  >
-  </app-text-block>
-</div>
+    <div class="col-sm-12">
+      <app-text-block
+        [smallTitle]="true"
+        [title]="'3ª opção: UBER'"
+        [firstText]="uberOption"
+      >
+      </app-text-block>
+    </div>
 
-<div class="col-sm-12">
-  <h1>Da Rodoviária:</h1>
-</div>
+    <div class="col-sm-12"><h1>Da Rodoviária:</h1></div>
 
-<div class="col-sm-12">
-  <app-text-block 
-    [title]="'1ª opção: Ônibus'" 
-    [firstText]="'Escolha uma das linhas: 208, 300, 448, 500, 640 ou 560. Desça na Av Getúlio Vargas, na parada próximo ao Hospital Beneficente
+    <div class="col-sm-12">
+      <app-text-block
+        [smallTitle]="true"
+        [title]="'1ª opção: Ônibus'"
+        [firstText]="
+          'Escolha uma das linhas: 208, 300, 448, 500, 640 ou 560. Desça na Av Getúlio Vargas, na parada próximo ao Hospital Beneficente
     Portuguesa. Atravesse a avenida, e procure pela rua Marçal, ao lado do Restaurante KI-TEMPERO. Nessa rua, pegue a primeira
-    a direita, estamos no número 215, na Rua Dona Libania.'">
-  </app-text-block>
-</div>
+    a direita, estamos no número 215, na Rua Dona Libania.'
+        "
+      >
+      </app-text-block>
+    </div>
 
-<div class="col-sm-12">
-  <h1>Do Porto:</h1>
-</div>
+    <div class="col-sm-12"><h1>Do Porto:</h1></div>
 
-<div class="col-sm-12">
-  <app-text-block 
-    [firstText]="'Venha a pé (15min), de Táxi ou Uber'">
-  </app-text-block>
+    <div class="col-sm-12">
+      <app-text-block
+        [smallTitle]="true"
+        [firstText]="'Venha a pé (15min), de Táxi ou Uber'"
+      >
+      </app-text-block>
+    </div>
+  </div>
+
+  <!-- How to arrive - Second property -->
+  <div *ngIf="secondProperty">
+    <div class="col-sm-12 special-display">
+      <app-text-block [title]="'Como chegar - Local Hostel Figueiredo'">
+      </app-text-block>
+    </div>
+
+    <div class="col-sm-12 no-padding">
+      <app-location-details
+        [address]="
+          'Av. Padre Calleri, 60 - Tancredo Neves, Figueiredo
+  Amazonas, 69735-000'
+        "
+        [phone]="'+55 (92) 98447-5713'"
+        [email]="'contatofigueiredo@localhostel.com.br'"
+      ></app-location-details>
+    </div>
+
+    <div class="col-sm-12"><h1>Da rodoviária:</h1></div>
+
+    <div class="col-sm-12">
+      <app-text-block
+        [smallTitle]="true"
+        [title]="'1ª opção: A pé'"
+        [firstText]="
+          'Atravesse a estrada BR 174 e logo verá o começo da Av. Padre Calleri, suba a avenida e após 5 ruas você irá nos
+      encontrar no lado direito da rua.'
+        "
+      >
+      </app-text-block>
+    </div>
+
+    <div class="col-sm-12"><h1>De carro, vindo de Manaus:</h1></div>
+
+    <div class="col-sm-12">
+      <app-text-block
+        [smallTitle]="true"
+        [firstText]="carText"
+      ></app-text-block>
+    </div>
+  </div>
 </div>

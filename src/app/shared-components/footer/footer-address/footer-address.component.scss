@@ -1,16 +1,20 @@
 .footer-address {
-    font-weight: bold;
-    font-size: 17px;
-    margin-bottom: 18px;
-    color: black;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 18px;
+  color: black;
 
-    a {
-        color: black;
-        text-decoration: none;        
-    }
+  a {
+    color: black;
+    text-decoration: none;
+  }
 }
 
-#footer-phone {
-    font-size: 26px;
-    font-weight: 100;
+.footer-phone {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.footer-email {
+  padding-top: 10px;
 }

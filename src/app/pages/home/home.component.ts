@@ -1,26 +1,28 @@
-import { Component, OnInit } from '@angular/core';
-import { RequestTranslateService } from '../../services/request-translate.service';
+import { Component, OnInit } from "@angular/core";
+import { RequestTranslateService } from "../../services/request-translate.service";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: "app-home",
+  templateUrl: "./home.component.html",
+  styleUrls: ["./home.component.scss"]
 })
 export class HomeComponent implements OnInit {
-
   texts: any;
 
-  constructor(
-    private requestTranslateService: RequestTranslateService
-  ) {
-    this.texts = requestTranslateService.getHostelDescriptionTranslate('Português');
-    requestTranslateService.changeEmitted$.subscribe(language => { this.translateLabels(language) });
+  constructor(private requestTranslateService: RequestTranslateService) {
+    this.texts = requestTranslateService.getHostelDescriptionTranslate(
+      "Português"
+    );
+    requestTranslateService.changeEmitted$.subscribe(language => {
+      this.translateLabels(language);
+    });
   }
 
-  ngOnInit() { }
+  ngOnInit() {}
 
   translateLabels(language) {
-    this.texts = this.requestTranslateService.getHostelDescriptionTranslate(language);
+    this.texts = this.requestTranslateService.getHostelDescriptionTranslate(
+      language
+    );
   }
-
 }

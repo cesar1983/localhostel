@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { RequestTranslateService } from "../../../services/request-translate.service";
 
 @Component({
@@ -7,6 +7,7 @@ import { RequestTranslateService } from "../../../services/request-translate.ser
   styleUrls: ["./features-hostel.component.scss"]
 })
 export class FeaturesHostelComponent implements OnInit {
+  @Input() inputedTitle: string;
   title = "Tenha o melhor de Manaus";
   firstText = "Compra segura";
   secondText = "Hostel nº 1 de Manaus";

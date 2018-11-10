@@ -1,9 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-text-block',
-  templateUrl: './text-block.component.html',
-  styleUrls: ['./text-block.component.scss']
+  selector: "app-text-block",
+  templateUrl: "./text-block.component.html",
+  styleUrls: ["./text-block.component.scss"]
 })
 export class TextBlockComponent implements OnInit {
   @Input() firstText: any;
@@ -11,10 +11,10 @@ export class TextBlockComponent implements OnInit {
   @Input() thirdText: any;
   @Input() fourthText: any;
   @Input() title: any;
-  @Input('center-title') centralizeTitle: boolean;
+  @Input() smallTitle: boolean;
+  @Input("center-title") centralizeTitle: boolean;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() { }
-
+  ngOnInit() {}
 }

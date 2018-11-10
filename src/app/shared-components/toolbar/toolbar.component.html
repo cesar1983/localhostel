@@ -1,11 +1,20 @@
 <mat-toolbar class="toolbar-fixed" color="accent">
+  <mat-icon
+    color="primary"
+    class="toolbar-material-icon"
+    (click)="toogleSidebar($event)"
+    >dehaze</mat-icon
+  >
+  <div class="property-links">
+    <a routerLink="/manaus" routerLinkActive="active"> <span>Manaus</span> </a>
+    <a routerLink="/figueiredo" routerLinkActive="active">
+      <span>Figueiredo</span>
+    </a>
+  </div>
 
-  <mat-icon color="primary" class="toolbar-material-icon" (click)="toogleSidebar($event)">dehaze</mat-icon>
+  <span *ngIf="showPhone" id="joinville-phone-number">+55 (92) 98412-5252</span>
 
-  <span id="joinville-phone-number">+55 (92) 98412-5252</span>
-  
   <app-social-media-links></app-social-media-links>
 
   <app-flags></app-flags>
-
 </mat-toolbar>

@@ -1,0 +1,46 @@
+$mat-second-color: #ffee58;
+
+.banner {
+  margin: 0px;
+  position: relative;
+  min-height: 84vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .display-datapickers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 84vh;
+
+    fixed-date-picker-bar {
+      width: 100%;
+    }
+  }
+}
+
+.features-banner {
+  background-color: $mat-second-color;
+
+  .col-sm-12 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 900;
+
+    i {
+      color: #019a3f;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .features-banner {
+    display: none;
+  }
+}

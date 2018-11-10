@@ -1,0 +1,11 @@
+<div class="container-fluid">
+  <landing-banner></landing-banner>
+  <app-text-block
+    [firstText]="(texts | async)?.amazonasDescription"
+    [title]="(texts | async)?.amazonasTitle"
+  >
+  </app-text-block>
+  <app-photos-section></app-photos-section>
+  <app-first-hostel-section></app-first-hostel-section>
+  <app-second-hostel-section></app-second-hostel-section>
+</div>
