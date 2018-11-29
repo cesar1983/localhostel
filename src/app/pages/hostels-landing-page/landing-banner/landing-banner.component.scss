@@ -8,6 +8,12 @@ $mat-second-color: #ffee58;
   background-size: cover;
   background-position: center;
 
+  div.logo img {
+    width: 300px;
+    height: auto;
+    margin: 37px 0 0 37px;
+  }
+
   .display-datapickers {
     display: flex;
     align-items: center;
@@ -54,5 +60,17 @@ mat-form-field {
 @media only screen and (max-width: 992px) {
   .features-banner {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  div.logo {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 50px 0px !important;
+
+    img {
+      margin: 0px !important;
+    }
   }
 }

@@ -7,8 +7,8 @@ import { RequestTranslateService } from "../../../services/request-translate.ser
   styleUrls: ["./photos-section.component.scss"]
 })
 export class PhotosSectionComponent implements OnInit {
-  srcImgOne = "assets/img/home/amazonas/1p.png";
-  srcImgTwo = "assets/img/home/amazonas/2p.png";
+  srcImgOne = "assets/img/home/amazonas/1p.jpg";
+  srcImgTwo = "assets/img/home/amazonas/2p.jpg";
   srcImgThree = "assets/img/home/amazonas/3p.jpg";
   srcImgFour = "assets/img/home/amazonas/4p.jpg";
   srcImgFive = "assets/img/home/amazonas/1g.png";
