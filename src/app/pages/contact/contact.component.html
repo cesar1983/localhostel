@@ -1,13 +1,15 @@
 <div class="container-fluid contact-container">
   <div class="row">
-    
-    <fixed-date-picker-bar [hideBookingBarOnTop]="hideBookingBarOnTop"></fixed-date-picker-bar>
+    <fixed-date-picker-bar
+      [hideBookingBarOnTop]="hideBookingBarOnTop"
+    ></fixed-date-picker-bar>
 
     <app-how-to-arrive></app-how-to-arrive>
-    
     <app-google-map></app-google-map>
 
-    <app-message></app-message>
+    <app-how-to-arrive [secondProperty]="true"></app-how-to-arrive>
+    <app-google-map [secondProperty]="true"></app-google-map>
 
+    <app-message></app-message>
   </div>
 </div>

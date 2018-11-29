@@ -1,27 +1,35 @@
 <div class="container-fluid">
-    <app-banner></app-banner>
+  <app-banner></app-banner>
 
-    <app-text-block 
-        [firstText]="(texts | async)?.hostelDescription" 
-        [title]="'O melhor hostel de Manaus'">
-    </app-text-block>
+  <app-text-block
+    [firstText]="
+      'Manaus, com seus quase dois milhões de habitantes, é uma cidade conhecida por suas belezas naturais e pelo povo
+    hospitaleiro. É a porta de entrada para conhecer os mistérios e encantos da floresta mais conhecida do mundo - a
+    Floresta Amazônica.
+    O Local Hostel Manaus abriu as portas em março de 2014 e surgiu com a proposta de ser um albergue de referência em
+    qualidade, conforto, sustentabilidade e responsabilidade.<br /><br />Com localização privilegiada no centro histórico de Manaus,
+    estamos a menos de 150 metros do Teatro Amazonas e do Largo São Sebastião, onde se encontram diversos museus, bares e
+    restaurantes. A localização perfeita para quem buscar facilidade de locomoção, acesso rápido e prático aos principais
+    atrativos da cidade, proximidade com o porto da cidade, de onde saem os barcos para Tabatinga, Santarém e Belém e de
+    quebra, aproveitar o charme da arquitetura europeia do nosso entorno.' ||
+      (texts | async)?.hostelDescription
+    "
+    [title]="'Manaus, uma cidade além da selva'"
+  >
+  </app-text-block>
 
-    <app-feature-items></app-feature-items>
+  <app-feature-items></app-feature-items>
 
-    <app-photos-section-home-one></app-photos-section-home-one>
+  <app-photos-section-home-one></app-photos-section-home-one>
 
-    <app-photos-section-home-two></app-photos-section-home-two>
+  <app-photos-section-home-two></app-photos-section-home-two>
 
-    <app-text-block 
-        [firstText]="(texts | async)?.joinvilleDescriptionOne" 
-        [secondText]="(texts | async)?.joinvilleDescriptionTwo" 
-        [title]="(texts | async)?.joinvilleTitle">
-    </app-text-block>
+  <app-text-block
+    [firstText]="(texts | async)?.joinvilleDescriptionOne"
+    [secondText]="(texts | async)?.joinvilleDescriptionTwo"
+    [title]="(texts | async)?.joinvilleTitle"
+  >
+  </app-text-block>
 
-    <!-- <app-photos-section-home-three></app-photos-section-home-three>
-
-    <app-feature-items-two></app-feature-items-two> -->
-
-    <app-features-hostel></app-features-hostel>
-
+  <app-features-hostel></app-features-hostel>
 </div>

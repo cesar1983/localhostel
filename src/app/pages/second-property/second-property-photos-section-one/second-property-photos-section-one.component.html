@@ -1,0 +1,60 @@
+<div class="container-fluid photos-section-one">
+  <div class="row">
+    <h2 class="title">{{ text }}</h2>
+    <div class="col-sm-3 no-padding">
+      <div class="row">
+        <div class="col-sm-12 no-padding">
+          <img
+            class="img-responsive-half-row default-thumbnail"
+            [src]="srcImgOne"
+            [alt]="defaultAltImg"
+          />
+          <img
+            class="img-responsive-half-row default-thumbnail"
+            [src]="srcImgTwo"
+            [alt]="defaultAltImg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3 no-padding">
+      <div class="row">
+        <div class="col-sm-12 no-padding">
+          <img
+            class="img-responsive-half-row default-thumbnail"
+            [src]="srcImgThree"
+            [alt]="defaultAltImg"
+          />
+          <img
+            class="img-responsive-half-row default-thumbnail"
+            [src]="srcImgFour"
+            [alt]="defaultAltImg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 no-padding">
+      <img
+        class="img-responsive-full-row default-thumbnail"
+        [src]="srcImgFive"
+        [alt]="defaultAltImg"
+      />
+    </div>
+
+    <div class="col-sm-12 no-padding">
+      <app-text-block
+        [firstText]="
+          'Por estarmos localizados no coração da Amazônia, damos uma atenção especial para questões de sustentabilidade,
+          utilizando conscientemente os recursos naturais, entre outras ações sociais.
+          Tudo foi pensado, desde a criação do projeto, em como respeitar a natureza. Na decoração do hostel você irá observar
+          que utilizamos móveis reaproveitados e de materiais reciclados.
+          Será um prazer recebê-lo como nosso hóspede para vivenciar essa experiência inesquecível com a cultura e os costumes
+          dos amazonenses.' ||
+          (description | async)?.photoSectionOneDescription
+        "
+      ></app-text-block>
+    </div>
+  </div>
+</div>

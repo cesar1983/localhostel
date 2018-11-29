@@ -1,19 +1,17 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from "@angular/core";
 
 @Component({
-  selector: 'app-sidebar-list',
-  templateUrl: './sidebar-list.component.html',
-  styleUrls: ['./sidebar-list.component.scss']
+  selector: "app-sidebar-list",
+  templateUrl: "./sidebar-list.component.html",
+  styleUrls: ["./sidebar-list.component.scss"]
 })
 export class SidebarListComponent implements OnInit {
   @Output() toogledSidebar = new EventEmitter<any>();
 
-  constructor() { }
+  constructor() {}
 
-  logoImgPath = 'assets/img/shared/logo.png';
-  logoImgPathNoText = 'assets/img/shared/sidebar/logo-joinville-hostel-no-text.jpg'
-  
-  defaultAltImg = 'Joinville Hostel';
+  logoImgPath = "assets/img/shared/logo-no-property.png";
+  defaultAltImg = "LocalHostel";
 
   ngOnInit() {}
 
@@ -21,5 +19,4 @@ export class SidebarListComponent implements OnInit {
     this.toogledSidebar.emit("toogle");
     window.scrollTo(0, 0);
   }
-
 }

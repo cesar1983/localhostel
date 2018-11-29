@@ -1,0 +1,61 @@
+<div class="container-fluid photos-section-two">
+  <div class="row default-margin-top">
+    <div class="col-sm-12 no-padding">
+      <h2 class="title">{{ text }}</h2>
+    </div>
+
+    <div class="col-sm-6 no-padding">
+      <img
+        class="img-responsive-full-row default-thumbnail"
+        [src]="sharedRoomOne"
+        [alt]="defaultAltImg"
+      />
+    </div>
+
+    <div class="col-sm-3 no-padding">
+      <div class="row">
+        <div class="col-sm-12 no-padding">
+          <img
+            class="img-responsive-half-row default-thumbnail"
+            [src]="sharedRoomTwo"
+            [alt]="defaultAltImg"
+          />
+          <img
+            class="img-responsive-half-row default-thumbnail"
+            [src]="sharedRoomThree"
+            [alt]="defaultAltImg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="row">
+        <div class="col-sm-12 no-padding">
+          <img
+            class="img-responsive-half-row default-thumbnail"
+            [src]="sharedRoomFour"
+            [alt]="defaultAltImg"
+          />
+          <img
+            class="img-responsive-half-row default-thumbnail"
+            [src]="sharedRoomFive"
+            [alt]="defaultAltImg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 no-padding">
+      <app-text-block
+        [firstText]="
+          'Quarto privativo ou dormitório compartilhado? Temos opções para todos os tipos de viajantes, desde famílias até
+      mochileiros em viagem solo, que estão a procura de economia e praticidade. Vamos te orientar a montar a viagem dos
+      sonhos de acordo com as suas necessidades e vontades.' ||
+          (description | async)?.bedroomDescription
+        "
+      >
+      </app-text-block>
+    </div>
+  </div>
+</div>
