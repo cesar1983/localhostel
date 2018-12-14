@@ -18,8 +18,10 @@ export class ToolbarComponent implements OnInit {
   brFlag = "/assets/img/shared/toolbar/br.png";
   ukFlag = "/assets/img/shared/toolbar/uk.png";
   gmFlag = "/assets/img/shared/toolbar/gm.png";
-  defaultAltImg = "LocalHostel ";
+  defaultAltImg = "LocalHostel";
   showPhone: boolean = false;
+
+  logoImgPath = "assets/img/shared/logo-no-property.png";
 
   constructor() {}
 

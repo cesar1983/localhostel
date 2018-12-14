@@ -4,6 +4,16 @@
   color: white;
 }
 
+div.logo img {
+  width: 150px;
+  height: auto;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.logo-link {
+  z-index: 3;
+}
+
 .toolbar-fixed {
   z-index: 2;
   position: relative;
@@ -69,6 +79,9 @@
 @media only screen and (max-width: 730px) {
   .property-links {
     width: 80%;
+  }
+  .logo-link {
+    display: none;
   }
 }
 @media only screen and (max-width: 600px) {
